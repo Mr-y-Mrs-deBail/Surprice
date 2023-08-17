@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter To You</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="img/icono.png">
+
+</head>
+<body>
+
+    <div class="contenedor0">
+
+        <button id="MV">Gracias por todo tu amor, mi TODO!</button>
+        <img class="trébol" src="https://images.emojiterra.com/google/noto-emoji/unicode-15/animated/1f340.gif" alt="">
+
+    </div>
+
+
+    <div class="contenedor">  
+
+    <div class="carta">
+        <div class="sobre"></div>
+        <div class="partes"></div>
+        <div class="tarjeta">
+        <div class="texto">Tú y YO</br> <br> esa fue idea de Dios</div>
+        <div class="corazon"></div>
+    </div>
+
+      <div class="corazones">
+      <div class="uno"></div>
+      <div class="dos"></div>
+      <div class="tres"></div>
+      <div class="cuatro"></div>
+      <div class="cinco"></div>
+      </div>
+      </div>
+   </div>
+   <div class="sombra"></div>
+   </div>
+
+
+   <!-- Esto es para animar la hoja de la carta mi amor con la librería que puse al principio del documento -->
+
+ <script>
+
+    $(document).ready(function () {
+    $('.contenedor').mouseenter(function () {
+        $('.tarjeta').stop().animate({
+            top: '-99px'
+        }, 'slow');
+
+    }).mouseleave(function () {
+        $('.tarjeta').stop().animate({
+            top: 0
+        }, 'slow');
+
+      });
+   });
+
+ </script>
+
+<!-- Esto es para la alerta que sale en la página y te lleve a la canción mi amor ♡ -->
+
+<script>
+
+const buttomMV = document.getElementById('MV');
+
+
+const TeAmo = () => {
+      alert('➳Espero te súper encante esta canción ♫♪♬ que te dedico mi amor 🎁 Te amoOOOO y te quiero conmigo, pero por encima de eso; ¡Te quiero súper Feliz! ♡(o^ᴗ^o) Así que sonríe siempre mi amor ♡(>∀<☆). TE AMOOOOOOOOOOOOOOOOO♡');
+      location.href = 'https://www.youtube.com/watch?v=J1iICVwhGcA';
+    };
+
+
+    buttomMV.addEventListener('click', TeAmo);
+</script>
+    
+
+</body>
+
+</html>
